@@ -54,7 +54,6 @@ class Pessoa():
             else:
                 print(f"{self.nome} esta falando")
                 self.comendo = True
-
 class ContaBancaria():
     def __init__(self, numero, nome, tipo, saldo, limite):
         self.numero=numero
@@ -107,3 +106,64 @@ class ContaBancaria():
     def ajustarlimite(self,limite):
         self.ajustarlimite = limite
         print(f"limite adicionado")
+class Animal():
+    def __init__(self,nome,cor):
+        self.nome = nome
+        self.cor = cor
+
+    def comer(self):
+        print(f"o {self.nome} foi comer...")
+class Gato(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome,cor)
+
+    def miar(self):
+        print(f'o {self.nome} foi miando...')
+class Vaca(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+    def comer(self):
+        print(f'{self.nome} foi comer capim')
+
+    def mugir(self):
+        print(f'a {self.nome} está mugindo')
+class Coruja(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+    def chirriar(self):
+        print(f'a {self.nome} está chirriando')
+class Porco(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+    def dormir(self):
+        print(f'a {self.nome} está dormindo')
+class Pintinho(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+    def piar(self):
+        print(f'{self.nome} está piando')
+class Cachorro(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+
+    def latir(self):
+        print(f'{self.nome} está latindo')
+class Coelho(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+
+    def comer(self):
+        print(f'{self.nome} foi comer cenoura')
+class Ingresso:
+    def __init__(self, valor):
+        self.valor = valor
+
+    def imprimeValor(self):
+        print(f'o valor do ingresso normal é: {self.valor}')
+class Vip(Ingresso):
+    def __init__(self,valor):
+        super().__init__(valor)
+        self.valor *= 1.5
+
+class
+
