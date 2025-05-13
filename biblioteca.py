@@ -165,5 +165,29 @@ class Vip(Ingresso):
         super().__init__(valor)
         self.valor *= 1.5
 
-class
+class Forma():
+    def __init__(self):
+        self.area = 0
+        self.perimetro = 0
+
+'''class Triangulo(Forma):
+    def __init__(self,base, altura,):
+        self.altura = altura
+        super().__init__()
+        self.altura+self.area(2)/2
+   def calculaArea(self):
+        (self.lado)*2/=
+    def calculaPerimetro(self):'''
+
+class Retangulo(Forma):
+    def __init__(self):
+        super().__init__()
+
+    def calculaArea( self, base, altura):
+        self.area = base*altura
+        print(f' a area é {self.area}')
+
+    def calculaPerimetro(self,base, altura):
+        self.perimetro= (base*altura)*2
+        print(f"o perimetro é {self.perimetro}")
 

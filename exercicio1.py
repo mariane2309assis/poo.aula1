@@ -1,4 +1,4 @@
-from biblioteca import Pessoa, Animal
+from biblioteca import Pessoa, Animal, Retangulo
 
 '''aluno01= Pessoa (78, "Mari", 20 )
 print(aluno01.peso)
@@ -55,9 +55,14 @@ pintinho1.piar()
 cachorro1.latir()
 coelho.comer()'''
 
-from biblioteca import Ingresso, Vip
+'''from biblioteca import Ingresso, Vip
 ingresso1 = Ingresso(20)
 ingresso2 = Vip(20)
 
 ingresso1.imprimeValor()
-ingresso2.imprimeValor()
+ingresso2.imprimeValor()'''
+
+from biblioteca import  Retangulo
+ret1= Retangulo()
+ret1.calculaArea(5,9)
+ret1.calculaPerimetro(8,7)
